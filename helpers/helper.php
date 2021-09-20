@@ -11,12 +11,12 @@ if ( ! function_exists( 'charity_basic_fonts_url' ) ) {
 		$font_subsets = 'latin,latin-ext';
 
 		/* translators: If there are characters in your language that are not supported by Barlow, translate this to 'off'. Do not translate into your own language. */
-		if ('off' !== esc_html_x('on', 'Barlow font: on or off', 'charity')) {
-			$charity_font_families[] = 'Barlow Semi Condensed:400,500,600';
+		if ('off' !== esc_html_x('on', 'Bebas Neue font: on or off', 'charity')) {
+			$charity_font_families[] = 'Bebas Neue:400';
 		}
 		/* translators: If there are characters in your language that are not supported by Saira, translate this to 'off'. Do not translate into your own language. */
-		if ('off' !== esc_html_x('on', 'Saira font: on or off', 'charity')) {
-			$charity_font_families[] = 'Saira:300,500,600';
+		if ('off' !== esc_html_x('on', 'Inter font: on or off', 'charity')) {
+			$charity_font_families[] = 'Inter:400,600';
 		}
 
 		if ($charity_font_families) {
