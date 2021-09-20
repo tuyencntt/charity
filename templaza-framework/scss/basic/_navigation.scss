@@ -1,0 +1,46 @@
+.post-navigation {
+  .post-title {
+    font-weight: bold;
+    margin: 2px 30px;
+  }
+  .meta-nav {
+    margin: 0;
+  }
+  .nav-previous {
+    .meta-nav .uk-icon {
+      margin-right: 10px;
+    }
+  }
+  .nav-next {
+    .meta-nav .uk-icon {
+      margin-left: 10px;
+    }
+  }
+}
+.page-links, .post-nav-links {
+  font-size: 0.875em;
+  .label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 8px;
+  }
+  .post-page-numbers {
+    color: $tz-basic-paginate;
+    padding:0 6px;
+    &.current {
+      color: $tz-basic-paginate-current;
+    }
+    &:hover {
+      color: $tz-basic-paginate-current;
+    }
+  }
+}
+.templaza-post-navigation {
+  border: 1px dashed #ddd;
+  > .uk-first-column {
+    border-right: 1px dashed #ddd;
+  }
+  > div {
+    padding: 14px 20px 20px;
+  }
+}

@@ -1,0 +1,25 @@
+$tztheme-quote-color:                 #8d78b5;
+$tztheme-quote-icon-color:            #7258a2;
+$tztheme-quote-bg:                    transparent;
+$tztheme-button_background:           #FED23D;
+$tztheme-button_background_hover:     #060606;
+$tztheme-button_text_color_hover:     #FED23D;
+$tztheme-button_text_color:           #060606;
+$tztheme-heading-color:               #060606;
+$tztheme-postmeta:                    #aaaaaa;
+$tztheme-global-color:                #FED23D;
+$tztheme-quote-color:                 #333333;
+$tztheme-quote-icon-color:            $tztheme-global-color;
+$tztheme-button-font: 'Bebas Neue', Arial, Helvetica, sans-serif;
+$tztheme-input-border: 1px solid rgba(0,0,0,.15);
+$tztheme-header-padding-y:                    0;
+$tztheme-input-height-large:                  60px;
+$tztheme-input-lineheight-large:              60px;
+
+$container-max-widths: (
+        sm: 768px,
+        md: 992px,
+        lg: 1200px,
+        xl: 1400px,
+        xxl: 1480px
+);

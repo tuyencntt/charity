@@ -1,0 +1,144 @@
+.templaza-single-comment{
+  .comment-list .comments{
+    padding-bottom:0;
+    margin-bottom:0;
+    border:none;
+    display:flex;
+    .comment-content{
+      padding-left:0;
+      margin-top:0;
+      .comment-head{
+        display:block;
+        a{
+          color:$tz-basic-heading-color;
+        }
+      }
+    }
+  }
+}
+.comments-area{
+  clear:both;
+}
+.comment-list{
+  padding-left:0;
+  li{
+    &.trackback,
+    &.pingback{
+      list-style: none;
+      margin-bottom: 30px;
+    }
+    a{
+      color:$tz-basic-heading-color;
+    }
+    .edit-link{
+      float:right;
+      a{
+        color:$tz-basic-a-color;
+      }
+    }
+  }
+  > .comment{
+    list-style: none;
+    border-bottom:1px solid $tz-basic-border-color;
+    padding-bottom:40px;
+    margin-bottom:40px;
+    .comment-author{
+      font-size: 1.2129rem;
+      img{
+        border-radius:50%;
+        float:left;
+        margin-right: 30px;
+      }
+      a{
+        color:$tz-basic-heading-color;
+      }
+      .says{
+        display:none;
+      }
+    }
+    .comment-metadata{
+      font-size: 0.875rem;
+      color:$tz-basic-meta-color;
+      .edit-link{
+        float:right;
+      }
+      a{
+        color:$tz-basic-meta-color;
+        &:hover{
+          color:$tz-basic-meta-color-hover;
+        }
+        &.comment-edit-link{
+          color: $tz-basic-heading-color;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .comment-content{
+      clear:both;
+      margin-top: 15px;
+      padding-left:105px;
+      img{
+        margin: 5px 0;
+      }
+    }
+    .reply{
+      padding-left:105px;
+      a {
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .comment-respond{
+      margin-left:105px;
+      margin-top: 20px;
+      padding: 30px;
+      border: 1px solid $tz-basic-border-color;
+      .comment-reply-title {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+    .children{
+      border-top: 1px solid $tz-basic-border-color;
+      margin-top: 40px;
+      padding-top: 40px;
+      li{
+        list-style: none;
+        border-bottom:1px solid $tz-basic-border-color;
+        padding-bottom:40px;
+        margin-bottom:40px;
+        &:last-child{
+          border: none;
+          padding-bottom:0;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:last-child{
+      border: none;
+    }
+  }
+  .comments{
+    .comment-author{
+      img{
+        @include border-radius(50%);
+      }
+    }
+  }
+}
+.templaza-mobile-btn{
+  display:none;
+}
+form{
+  input[type="text"],
+  input[type="email"],
+  input[type="search"]{
+    margin-top:15px;
+  }
+}

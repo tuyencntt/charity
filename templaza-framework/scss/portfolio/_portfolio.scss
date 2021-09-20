@@ -1,0 +1,74 @@
+.templaza-gallery-item{
+  .img-inner{
+    position:relative;
+    height:350px;
+  }
+  a{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(0,0,0,0.4);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include transition($tztheme-transition-all);
+  }
+  &:hover{
+    img{
+      filter:blur(2px);
+      @include transition($tztheme-transition-all);
+    }
+    a{
+      opacity:1;
+      color:#fff;
+      @include transition($tztheme-transition-all);
+    }
+  }
+  img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+}
+.portfolio-meta{
+  i{
+    margin-right:5px;
+  }
+}
+.templaza-portfolio{
+  .tzfilter {
+    width: 250px;
+    max-width: 100%;
+  }
+  .uk-margin-xlarge-bottom{
+    &:last-child{
+      margin-bottom: 70px;
+    }
+  }
+  .templaza-portfolio-item {
+    h3 {
+      margin-top: 30px;
+      a {
+        color: inherit;
+      }
+    }
+  }
+  .tz-portfolio-thumbnail {
+    box-shadow: 3px 5px 30px 0 rgb(0 0 0 / 15%);
+    transition: all .3s cubic-bezier(.2, .5, .3, 1);
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 65px rgb(0 0 0 / 12%);
+    }
+  }
+}

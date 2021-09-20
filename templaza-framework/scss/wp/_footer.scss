@@ -1,0 +1,69 @@
+.templaza-footer {
+   h2.widgettitle{
+     font-size:1.7em;
+   }
+  .widget_nav_menu {
+    a {
+      color:inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  p{
+    margin-bottom: 15px;
+  }
+  * + p{
+    margin-top:15px;
+  }
+  .tnp-subscription-minimal{
+    form{
+      display: flex;
+    }
+    input{
+      &.tnp-email,&.tnp-submit{
+        margin:0;
+        height: $tztheme-input-height-large;
+        line-height: $tztheme-input-lineheight-large;
+        padding:0 20px;
+        border:none;
+      }
+      &.tnp-email{
+        width:80%;
+        font-family: inherit;
+      }
+      &.tnp-submit{
+        width:19%;
+        border:none;
+        background: $tztheme-button_background;
+        color:$tztheme-button_text_color;
+        font-size: 1.3em;
+        &:hover{
+          background: $tztheme-button_background_hover;
+          color:$tztheme-button_text_color_hover;
+
+        }
+      }
+
+    }
+
+  }
+  .templaza-social{
+    li{
+      a{
+        background:#4D4D4D;
+        height: $tztheme-input-height-large;
+        width:$tztheme-input-height-large;
+        @include border-radius(50%);
+        color:#aaa !important;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+          background:$tztheme-global-color;
+          color:$tztheme-button_text_color !important;
+        }
+      }
+    }
+  }
+}

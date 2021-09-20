@@ -1,0 +1,98 @@
+// Responsive breakpoints mixin
+@mixin add_variables( $view: frontend ) {
+	@if frontend == $view {
+		:root {
+			@content;
+		}
+	}
+	@if editor == $view {
+		:root,
+		body {
+			@content;
+		}
+	}
+}
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+// Button style
+// - Applies button styles to blocks and elements that share them.
+@mixin tz-basic-button-style() {
+	border: $tz-basic-button-border-width solid transparent;
+	border-radius: $tz-basic-button-radius;
+	cursor: pointer;
+	font-weight: $tz-basic-button-font-weight;
+	font-size: $tz-basic-button-font-size;
+	line-height: $tz-basic-button-line-height;
+	padding:$tz-basic-button-padding;
+	text-decoration: none;
+	@include transition($tz-basic-transition);
+
+	// Standard Button Color Relationship Logic
+	&:not(:hover):not(:active) {
+
+		// Text colors
+		&:not(.has-text-color) {
+			color: $tz-basic-button-color;
+
+			// Nested
+			.has-background & {
+				color: $tz-basic-button-color;
+
+				&.has-background {
+					color: $tz-basic-button-color;
+				}
+			}
+		}
+
+		// Background-colors
+		&:not(.has-background) {
+			background-color: $tz-basic-button-bg;
+
+			// Nested
+			.has-background & {
+				background-color: $tz-basic-button-bg;
+			}
+		}
+	}
+
+	// Hover Button color should match parent element foreground color
+	&:hover,
+	&:active {
+		background-color: $tz-basic-button-bg-hover;
+		border-color: $tz-basic-button-bg-hover;
+		color: inherit;
+		@include transition($tz-basic-transition);
+	}
+
+	// Disabled Button colors
+	&:disabled {
+		background-color: $tz-basic-button-disable-bg;
+		border-color: $tz-basic-button-disable-border-color;
+		color: $tz-basic-button-disable-color;
+	}
+}
+
+@mixin innerblock-margin-clear($container) {
+
+	// Clear the top margin for the first-child.
+	> #{$container} > *:first-child {
+		margin-top: 0;
+	}
+
+	// Last child that is not the appender.
+	> #{$container} > *:last-child:not(.block-list-appender) {
+		margin-bottom: 0;
+	}
+
+	// When selected, the last item becomes the second last because of the appender.
+	&.has-child-selected > #{$container} > *:nth-last-child(2),
+	&.is-selected > #{$container} > *:nth-last-child(2) {
+		margin-bottom: 0;
+	}
+}

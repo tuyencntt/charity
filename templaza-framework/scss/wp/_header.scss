@@ -1,0 +1,24 @@
+.header-charity-section{
+  width:100%;
+
+}
+.header-block-item{
+  *{
+    font-size:0.875rem;
+  }
+  i{
+    color:$tztheme-global-color;
+    padding-right:5px;
+  }
+  a{
+    padding-right:20px;
+  }
+}
+header{
+  .charity-logo{
+    background:$tztheme-global-color;
+  }
+  ul,ol{
+    padding-left: 0;
+  }
+}

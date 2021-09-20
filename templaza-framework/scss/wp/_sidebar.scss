@@ -1,0 +1,12 @@
+div.templaza-sidebar {
+  .widget+.widget {
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+      margin-top: 40px;
+    }
+    .widget-content, .wp-block-group, .wp-block-group__inner-container {
+      > h1, > h2, > h3, > h4, > h5, > h6 {
+        margin-top: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.wp-block-archives,
+.widget_meta,
+.wp-block-page-list,
+.wp-block-categories,
+.wp-block-categories__list{
+	padding:0;
+	li{
+		list-style: none;
+		margin:$tz-basic-list-margin;
+		font-size: $tz-basic-category-size;
+		a{
+			color:inherit;
+			&:hover{
+				color:inherit;
+				text-decoration: underline;
+			}
+		}
+	}
+}

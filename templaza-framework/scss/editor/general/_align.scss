@@ -1,0 +1,27 @@
+.alignright,.wp-block[data-align="right"] > *{
+  float:right;
+  margin:0.5em 0 0.5em 1em;
+}
+.alignleft,.wp-block[data-align="left"] > *{
+  float:left;
+  margin:0.5em 1em 0.5em 0;
+  &.wp-block-cover{
+    margin:0.5em 1em 20px 0;
+  }
+}
+.aligncenter,.wp-block[data-align="center"] > *{
+  margin-left: auto;
+  margin-right: auto;
+  clear:both;
+}
+.alignwide {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignfull{
+  max-width: none;
+}
+.wp-caption{
+  max-width: 100%;
+}

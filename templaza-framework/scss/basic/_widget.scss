@@ -1,0 +1,60 @@
+.templaza-basic-sidebar{
+  >.widget{
+    margin-bottom: 40px;
+  }
+}
+.wp-block-latest-comments__comment{
+  line-height: 1.5em;
+}
+
+.widget_meta{
+  ul{
+    padding:0;
+  }
+}
+
+.widget_nav_menu{
+  ul.menu{
+    padding: 0;
+    li{
+      list-style: none;
+      margin: 0;
+    }
+    ul{
+      padding-left: 20px;
+    }
+  }
+}
+.wp-block-calendar table caption, .wp-block-calendar table tbody{
+  margin:5px 0;
+}
+.widget_rss ul {
+  li + li {
+    padding-top: 20px;
+  }
+  .rsswidget {
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+  .rss-date {
+    display: block;
+  }
+  .rssSummary {
+    margin-top: 15px;
+    line-height: 1.4em;
+  }
+  cite {
+    display: block;
+    margin-top: 8px;
+  }
+}
+.widget_recent_comments {
+  .recentcomments {
+    line-height: 1.7;
+    .comment-author-link {
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+}

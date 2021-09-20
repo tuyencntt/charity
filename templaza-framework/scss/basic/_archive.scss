@@ -1,0 +1,99 @@
+.uk-article.sticky {
+  .entry-title a {
+    text-decoration: underline;
+  }
+}
+.charity-sticky-post-no-thumbnail {
+  color: $tz-basic-a-color;
+}
+.navigation {
+  .nav-links{
+    text-align: left;
+    .page-numbers {
+      display: inline-flex;
+      padding: 7px 15px;
+      min-width: 44px;
+      min-height: 44px;
+      color: $tz-basic-paginate;
+      justify-content: center;
+      align-items: center;
+      margin: 0 3px;
+      transition: all 0.3s linear;
+      background:#fff;
+      &:hover,&.current{
+        background:$tz-basic-button-bg;
+        color:$tz-basic-button-color;
+      }
+      &.next,&.prev{
+        padding:7px 10px;
+      }
+    }
+
+  }
+}
+.comment-form{
+  .comment-form-comment{
+    label{
+      display:block;
+      margin:5px 0;
+    }
+  }
+  textarea{
+    width:100%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding:10px 15px;
+    height:110px;
+    max-width: 100%;
+    &:focus-visible{
+      outline: none;
+    }
+  }
+  .form-submit{
+    input{
+      background:$tz-basic-button-bg;
+      color:$tz-basic-button-color;
+      padding:$tz-basic-input-button-padding;
+      border-radius:$tz-basic-button-radius;
+      font-size:$tz-basic-button-font-size;
+      border-color:transparent;
+      @include transition($tz-basic-transition);
+      &:hover{
+        background:$tz-basic-button-bg-hover;
+        cursor: pointer;
+        @include transition($tz-basic-transition);
+      }
+    }
+  }
+}
+.page-links{
+  clear:both;
+  padding-top:10px;
+}
+.templaza-archive{
+  .templaza-blog-item-title{
+    font-size: $tz-basic-title-blog-list-size;
+    font-weight: $tz-basic-title-blog-list-weight;
+    a{
+      color:inherit;
+    }
+    @media (max-width: 960px) {
+      font-size: $tz-basic-title-blog-list-size-small;
+    }
+  }
+}
+.templaza-basic-single-heading{
+  .page-title{
+    font-weight:$tz-basic-title-page-weight;
+  }
+  .entry-title{
+    font-weight:$tz-basic-title-single-weight;
+  }
+}
+figure.post-thumbnail {
+  display: flex;
+  margin-bottom: 40px;
+  flex-direction: column;
+  .wp-caption-text {
+    margin-bottom: 0;
+  }
+}

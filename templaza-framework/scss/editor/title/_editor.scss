@@ -1,0 +1,14 @@
+.wp-block{
+	&.editor-post-title__block {
+		margin-top: 120px;
+		margin-bottom: 120px;
+		max-width: 900px;
+		.editor-post-title__input{
+			font-family: $tz-basic-heading-font;
+			font-size:$tz-basic-title-single-size;
+			font-weight: $tz-basic-title-single-weight;
+			color:$tz-basic-heading-color;
+			text-align: center;
+		}
+	}
+}

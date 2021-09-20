@@ -1,0 +1,37 @@
+.group::after,
+.entry-content::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  a{
+    color:$tz-basic-a-color;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      color:$tz-basic-a-color-hover;
+    }
+  }
+  iframe{
+    width:100%;
+  }
+}
+[data-block]{
+  //margin-top:$tz-basic-spacing-vertical;
+  //margin-bottom:$tz-basic-spacing-vertical;
+}
+
+hr{
+  clear:both;
+}
+:root .is-small-text, :root .has-small-font-size{
+  line-height: 1.5;
+}
+:root .is-large-text, :root .has-large-font-size{
+  line-height: 1.3;
+}

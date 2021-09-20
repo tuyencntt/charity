@@ -1,0 +1,134 @@
+blockquote{
+	font-style: $tz-basic-quote-font-style;
+	position: relative;
+	padding-left: 1em;
+	border-left: 4px solid $tz-basic-quote-border-color;
+	p{
+		font-family: $tz-basic-quote-font;
+		font-size: $tz-basic-quote-font-size;
+		font-style: $tz-basic-quote-font-style;
+		font-weight: $tz-basic-quote-font-weight;
+		line-height: $tz-basic-quote-line-height;
+		margin-bottom: $tz-basic-quote-content-margin;
+		color:currentColor;
+	}
+	em, a{
+		color:currentColor;
+	}
+}
+.wp-block-quote {
+	position: relative;
+	border-left: 4px solid $tz-basic-quote-border-color;
+	font-style: $tz-basic-quote-font-style;
+	margin: $tz-basic-spacing-vertical auto;
+	p {
+		font-family: $tz-basic-quote-font;
+		font-size: $tz-basic-quote-font-size;
+		font-style: $tz-basic-quote-font-style;
+		font-weight: $tz-basic-quote-font-weight;
+		line-height: $tz-basic-quote-line-height;
+		margin-bottom: $tz-basic-quote-content-margin;
+		color:$tz-basic-quote-color;
+		em,a{
+			color:currentColor;
+		}
+	}
+	cite{
+		color:$tz-basic-quote-author;
+		em{
+			color:$tz-basic-quote-author;
+		}
+	}
+	&.is-style-default{
+		p{
+			margin-bottom: $tz-basic-quote-content-margin;
+		}
+	}
+	blockquote{
+		font-style: $tz-basic-quote-font-style;
+		&:before {
+			content: "\201C";
+			font-size: $tz-basic-quote-font-size;
+			line-height: $tz-basic-quote-line-height;
+			left: 0;
+			position:absolute;
+		}
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	.wp-block-quote__citation {
+		font-size: $tz-basic-quote-font-cite;
+		.has-background &,
+		[class*="background-color"] &,
+		[style*="background-color"] &,
+		.wp-block-cover[style*="background-image"] & {
+			color: currentColor;
+		}
+	}
+
+	&.has-text-align-right {
+		border-right: 4px solid $tz-basic-quote-border-color;
+		padding-right: 1em;
+		border-left: 0;
+		// Hide the left aligned quote.
+		&:before {
+			display: none;
+		}
+	}
+
+	&.has-text-align-center {
+		&:before {
+			display: none;
+		}
+	}
+
+	&.is-large,
+	&.is-style-large {
+		margin:$tz-basic-quote-large-margin;
+		padding: $tz-basic-quote-padding-large;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+
+		/* Resetting margins to match _block-container.scss */
+
+		p {
+			font-size: $tz-basic-quote-font-size-large;
+			font-style: $tz-basic-quote-font-style-large;
+			line-height: $tz-basic-quote-line-height-large;
+			margin-bottom:$tz-basic-quote-content-margin;
+		}
+		cite{
+			display:block;
+			font-size:$tz-basic-quote-font-size-cite-large;
+			color:currentColor;
+		}
+
+		&:before {
+			font-size: $tz-basic-quote-font-size-large;
+			line-height: $tz-basic-quote-line-height-large;
+			left: 0;
+		}
+
+		&.has-text-align-right {
+
+			// Hide the left aligned quote.
+			&:before {
+				display: none;
+			}
+
+			// Align the quote left of the text.
+			p:before {
+				content: "\201D";
+				font-size: $tz-basic-quote-font-size-large;
+				font-weight: normal;
+				line-height: $tz-basic-quote-line-height-large;
+				margin-right: 10px;
+			}
+		}
+
+	}
+
+}

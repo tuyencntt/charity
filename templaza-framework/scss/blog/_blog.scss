@@ -1,0 +1,80 @@
+div.templaza-archive{
+  .templaza-archive-item{
+    span.category{
+      text-transform: uppercase;
+      color:$tztheme-heading-color;
+      font-size:0.875em;
+    }
+    .title{
+      margin-bottom: 0;
+      a {
+        color: inherit;
+      }
+    }
+  }
+  .wp-block-pullquote{
+    border:none;
+    blockquote{
+      margin:0;
+      &:before{
+        color:$tztheme-global-color;
+      }
+    }
+    p{
+      color:$tztheme-heading-color;
+    }
+    cite{
+      color:$tz-basic-body-color;
+    }
+  }
+  .templaza-blog-item-link{
+    padding: $tz-basic-pullquote-padding;
+    .link-icon{
+      font-size: 1.5rem;
+      color:$tztheme-global-color;
+    }
+    .link-content{
+      line-height: $tz-basic-pullquote-line-height;
+      margin: 30px 0 0;
+    }
+    a{
+      font-family: $tz-basic-quote-font;
+      font-size: $tz-basic-quote-font-size;
+      font-style: $tz-basic-pullquote-font-style;
+      font-weight: $tz-basic-pullquote-font-weight;
+    }
+  }
+}
+
+.templaza-blog-item-info{
+  margin-bottom: 0;
+  span:not(:last-child)::after{
+    content:"";
+    @include border-radius(50%);
+    background: $tztheme-postmeta;
+    height:5px;
+    width:5px;
+    display:inline-block;
+    margin:0 12px 3px;
+  }
+}
+.templaza-blog-item .templaza-archive-gallery .uk-slidenav.uk-slidenav-next{
+  @include border-radius(0);
+}
+div.templaza-sidebar {
+  ul, ol{
+    li {
+      margin: 10px 0;
+      font-size: 0.875rem;
+      a {
+        color: inherit;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.templaza-sticky .templaza-blog-item-title a {
+  text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+
+.charity-breadcrumb{
+  ul{
+    list-style: none;
+    margin:0;
+    >:nth-child(n+2):not(.uk-first-column)::before{
+      margin: 0 20px;
+    }
+    li{
+      font-size:0.875rem;
+      a{
+        color:#fff;
+      }
+      &.item-current{
+        span{
+          color:$tztheme-global-color;
+        }
+      }
+      &:before{
+        color:#fff !important;
+      }
+    }
+    >*{
+      display:contents;
+    }
+  }
+}
+.templaza-heading{
+  h1,h2,h3{
+    color:inherit;
+    margin-bottom: 0;
+  }
+}
