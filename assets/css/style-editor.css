@@ -252,7 +252,7 @@ figcaption, .wp-caption, .wp-caption-text, .wp-block-embed figcaption {
 .wp-block-categories__list li {
   list-style: none;
   margin: 0.5em 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .wp-block-archives li a,
 .widget_meta li a,
@@ -268,6 +268,17 @@ figcaption, .wp-caption, .wp-caption-text, .wp-block-embed figcaption {
 .wp-block-categories__list li a:hover {
   color: inherit;
   text-decoration: underline;
+}
+.wp-block-archives li:before,
+.widget_meta li:before,
+.wp-block-page-list li:before,
+.wp-block-categories li:before,
+.wp-block-categories__list li:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #FED23D;
+  padding-right: 10px;
 }
 
 .wp-block-code {
@@ -529,8 +540,8 @@ h6,
 .h6 {
   clear: both;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: #2e3c40;
+  font-weight: 400;
+  color: #060606;
 }
 h1 strong,
 .h1 strong,
@@ -544,7 +555,7 @@ h5 strong,
 .h5 strong,
 h6 strong,
 .h6 strong {
-  font-weight: 600;
+  font-weight: 400;
 }
 h1 a,
 .h1 a,
@@ -558,7 +569,7 @@ h5 a,
 .h5 a,
 h6 a,
 .h6 a {
-  color: #2e3c40;
+  color: #060606;
 }
 h1 a:hover,
 .h1 a:hover,
@@ -572,7 +583,7 @@ h5 a:hover,
 .h5 a:hover,
 h6 a:hover,
 .h6 a:hover {
-  color: #2e3c40;
+  color: #060606;
 }
 
 h1,
@@ -586,14 +597,14 @@ h2,
 .h2 {
   font-size: 2.1642rem;
   line-height: 1.2em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h3,
 .h3 {
   font-size: 1.7843rem;
   line-height: 1.2em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h4,
@@ -666,14 +677,14 @@ h6,
   margin-bottom: 0;
 }
 .wp-block-latest-comments .wp-block-latest-comments__comment-meta a {
-  color: #2e3c40;
-  font-size: 0.875rem;
+  color: #060606;
+  font-size: 1.1rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
 }
 .wp-block-latest-comments .wp-block-latest-comments__comment-meta a:hover {
   text-decoration: underline;
-  color: #2e3c40;
+  color: #060606;
 }
 .wp-block-latest-comments .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-author {
   font-weight: bold;
@@ -720,15 +731,22 @@ h6,
 }
 .wp-block-latest-posts > li > a {
   display: inline-block;
-  font-size: 0.875rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 400;
   line-height: 1.2em;
   margin-bottom: calc(0.333 * 10px);
-  color: #2e3c40;
+  color: #060606;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
 }
 .wp-block-latest-posts > li > a:hover {
-  text-decoration: underline;
-  color: #2e3c40;
+  color: #060606;
+}
+.wp-block-latest-posts .wp-block-latest-posts__featured-image {
+  width: 70px;
+}
+.wp-block-latest-posts .wp-block-latest-posts__featured-image.alignleft {
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-author {
   color: #999;
@@ -1254,16 +1272,16 @@ blockquote em, blockquote a {
 }
 .wp-block-rss .wp-block-rss__item-title > a {
   display: inline-block;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 0.875rem;
-  font-weight: 300;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
   line-height: 1.2em;
   margin-bottom: calc(0.333 * 10px);
-  color: #2e3c40;
+  color: #060606;
 }
 .wp-block-rss .wp-block-rss__item-title > a:hover {
   text-decoration: underline;
-  color: #2e3c40;
+  color: #060606;
 }
 .wp-block-rss .wp-block-rss__item-author {
   color: #999;
@@ -1291,6 +1309,10 @@ blockquote em, blockquote a {
   padding-right: 0;
 }
 
+.widget_search {
+  padding: 0 !important;
+}
+
 .wp-block-search .wp-block-search__label {
   font-size: 18px;
   font-weight: 600;
@@ -1298,19 +1320,45 @@ blockquote em, blockquote a {
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,
 .wp-block-search .wp-block-search__input {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 0;
   font-family: inherit;
-  line-height: 40px;
+  line-height: 60px;
+  height: 60px;
   max-width: inherit;
   padding: 0 15px;
-  margin-right: 5px;
+  margin-right: 0;
   margin-top: 0;
   font-weight: 300;
 }
 .has-background .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,
 .has-background .wp-block-search .wp-block-search__input {
   border-color: transparent;
+}
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button.has-icon,
+.wp-block-search .wp-block-search__input .wp-block-search__button.has-icon {
+  background: none !important;
+  align-items: center;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button.has-icon:hover,
+.wp-block-search .wp-block-search__input .wp-block-search__button.has-icon:hover {
+  color: #FED23D;
+  border-color: transparent;
+  background: none;
+}
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button.has-icon:hover svg,
+.wp-block-search .wp-block-search__input .wp-block-search__button.has-icon:hover svg {
+  fill: #FED23D;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .wp-block-search .wp-block-search__button.wp-block-search__button {
   border: 2px solid transparent;
@@ -1383,7 +1431,7 @@ blockquote em, blockquote a {
   outline: inherit;
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
-  padding: 2px 2px 2px 15px;
+  padding: 0 0 0 15px;
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__input {
   border: none;
@@ -1500,7 +1548,7 @@ table.is-style-regular .has-background, table.is-style-stripes .has-background, 
 .wp-block-table.is-style-stripes .has-background thead tr,
 .wp-block-table.is-style-stripes .has-background tfoot tr,
 .wp-block-table.is-style-stripes .has-background tbody tr {
-  color: #2e3c40;
+  color: #060606;
 }
 table.is-style-stripes,
 .wp-block-table.is-style-stripes {
@@ -1568,21 +1616,22 @@ table.wp-calendar-table caption {
 .wp-block-tag-cloud a {
   float: left;
   margin: 0 10px 10px 0;
-  padding: 4px 11px 6px;
+  padding: 4px 15px 6px;
   text-decoration: none;
-  background: transparent;
+  background: #F5F2ED;
   color: #55595a;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
+  border: none;
+  border-radius: 0;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   font-size: 1em !important;
+  text-transform: capitalize;
 }
 .wp-block-tag-cloud a:hover {
-  background: #060606;
+  background: #FED23D;
   color: #060606;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -1605,7 +1654,7 @@ table.wp-calendar-table caption {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: 400;
-  color: #2e3c40;
+  color: #060606;
   text-align: center;
 }
 

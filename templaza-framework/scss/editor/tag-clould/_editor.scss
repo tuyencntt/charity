@@ -14,8 +14,9 @@
 		border-radius: $tz-basic-tagcloud-border-radius;
 		@include transition($tz-basic-transition);
 		font-size: $tz-basic-tagcloud-font-size;
+		text-transform: capitalize;
 		&:hover{
-			background:$tz-basic-button-bg-hover;
+			background:$tz-basic-button-bg;
 			color:$tz-basic-button-color;
 			@include transition($tz-basic-transition);
 		}

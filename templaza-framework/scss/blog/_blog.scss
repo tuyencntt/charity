@@ -65,11 +65,10 @@ div.templaza-sidebar {
   ul, ol{
     li {
       margin: 10px 0;
-      font-size: 0.875rem;
       a {
         color: inherit;
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
         }
       }
     }

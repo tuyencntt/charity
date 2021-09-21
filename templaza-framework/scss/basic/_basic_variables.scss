@@ -28,11 +28,13 @@ $tz-basic-form-label-weight:600;
 $tz-basic-form-input-weight:300;
 $tz-basic-input-padding:0 15px;
 $tz-basic-input-button-padding:0 20px;
-$tz-basic-input-inside-padding:2px 2px 2px 15px;
-$tz-basic-input-height:40px;
-$tz-basic-input-line-height:40px;
-$tz-basic-input-border:1px solid rgba(0, 0, 0, 0.15);
+$tz-basic-input-inside-padding:0 0 0 15px;
+$tz-basic-input-height:60px;
+$tz-basic-input-line-height:60px;
+$tz-basic-input-border:none;
 $tz-basic-input-border-radius:0;
+
+$tz-basic-theme-color:#FED23D;
 
 $tz-basic-button-bg:#FED23D;
 $tz-basic-button-bg-hover:#060606;
@@ -97,10 +99,10 @@ $tz-basic-menu-dropdown-color:#ffffff;
 $tz-basic-menu-dropdown-color-hover:#ffffff;
 
 $tz-basic-heading-font:'Bebas Neue', Arial, Helvetica, sans-serif;
-$tz-basic-heading-font-weight:600;
-$tz-basic-heading-font-weight-strong:600;
-$tz-basic-heading-color:#2e3c40;
-$tz-basic-heading-color-hover:#2e3c40;
+$tz-basic-heading-font-weight:400;
+$tz-basic-heading-font-weight-strong:400;
+$tz-basic-heading-color:#060606;
+$tz-basic-heading-color-hover:#060606;
 $tz-basic-heading-line-height:1.2em;
 
 
@@ -112,8 +114,8 @@ $tz-basic-heading-h5-size: 1.2129rem;
 $tz-basic-heading-h6-size: 1.1545rem;
 
 $tz-basic-heading-h1-weight: 500;
-$tz-basic-heading-h2-weight: 600;
-$tz-basic-heading-h3-weight: 600;
+$tz-basic-heading-h2-weight: 400;
+$tz-basic-heading-h3-weight: 400;
 $tz-basic-heading-h4-weight: 500;
 $tz-basic-heading-h5-weight: 500;
 $tz-basic-heading-h6-weight: 500;
@@ -153,13 +155,13 @@ $tz-basic-figcaption-size:0.75rem;
 $tz-basic-figcaption-margin-top:0.5em;
 $tz-basic-figcaption-margin-bottom:2em;
 
-$tz-basic-latest-font:'Inter', Arial, Helvetica, sans-serif;
-$tz-basic-latest-posts-size:0.875rem;
-$tz-basic-latest-posts-weight:300;
+$tz-basic-latest-font:'Bebas Neue', Arial, Helvetica, sans-serif;
+$tz-basic-latest-posts-size:1.1rem;
+$tz-basic-latest-posts-weight:400;
 $tz-basic-latest-posts-divi-border: 2px solid rgba(0,0,0,0.7);
 $tz-basic-latest-posts-divi-item: 1px solid rgba(0,0,0,0.15);
 
-$tz-basic-category-size:0.875rem;
+$tz-basic-category-size:1rem;
 
 $tz-basic-separator-height:2px;
 $tz-basic-separator-color:rgba(0,0,0,0.7);
@@ -171,13 +173,13 @@ $tz-basic-table-padding:5px 10px;
 $tz-basic-table-hasbg-text-color:$tz-basic-heading-color;
 $tz-basic-table-stripes-bg-old:#f0f0f0;
 
-$tz-basic-tagcloud-border-radius:2px;
-$tz-basic-tagcloud-bg:transparent;
+$tz-basic-tagcloud-border-radius:0;
+$tz-basic-tagcloud-bg:#F5F2ED;
 $tz-basic-tagcloud-font-size:1em !important;
-$tz-basic-tagcloud-border:1px solid rgba(0,0,0,0.15);
+$tz-basic-tagcloud-border:none;
 $tz-basic-tagcloud-color:$tz-basic-body-color;
 $tz-basic-tagcloud-margin:0 10px 10px 0;
-$tz-basic-tagcloud-padding:4px 11px 6px;
+$tz-basic-tagcloud-padding:4px 15px 6px;
 
 $tz-basic-preformatted-padding:15px;
 $tz-basic-preformatted-border:1px solid rgba(0,0,0,0.15);

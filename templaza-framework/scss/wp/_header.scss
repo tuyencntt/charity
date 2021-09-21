@@ -17,8 +17,15 @@
 header{
   .charity-logo{
     background:$tztheme-global-color;
+    color:$tztheme-heading-color;
   }
   ul,ol{
     padding-left: 0;
+  }
+  div.templaza-sidebar {
+    .widget{
+      margin:0;
+      padding:0;
+    }
   }
 }

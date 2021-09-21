@@ -49,9 +49,16 @@
 		line-height: $tz-basic-heading-line-height;
 		margin-bottom: calc(0.333 * #{$tz-basic-spacing-vertical});
 		color:$tz-basic-heading-color;
+		font-family: $tz-basic-latest-font;
 		&:hover{
-			text-decoration: underline;
 			color:$tz-basic-heading-color-hover;
+		}
+	}
+	.wp-block-latest-posts__featured-image{
+		width:70px;
+		&.alignleft{
+			margin-right:20px;
+			margin-bottom:20px;
 		}
 	}
 
